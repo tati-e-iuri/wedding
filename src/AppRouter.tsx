@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     },
 
 ],{
-    basename: "/casamento"
+    basename: "/wedding"
 });
 
 export const AppRouter = () => {

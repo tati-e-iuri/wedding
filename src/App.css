@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-cursive {
+  font-family: 'Great Vibes', cursive;
+}
+
+
+body {
+  overflow-x: hidden;
+}
