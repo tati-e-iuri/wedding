@@ -18,7 +18,9 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install autoprefixer postcss tailwindcss --save-dev
 
       - name: Build
         env:
