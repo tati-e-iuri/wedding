@@ -2,6 +2,7 @@ import {colors} from "../components/Sidebar.tsx";
 import {MainLayout} from "../components/MainLayout.tsx";
 import {Check, Gift, Heart, MapPin} from "lucide-react";
 import {NavLink} from "react-router-dom";
+import {env} from "../config.ts";
 //
 // const images = [
 //     "placeholder.png",
@@ -79,13 +80,15 @@ export const HomePage = () => {
         }
     ];
 
+    const name = env.NAME
+
     return (
         <MainLayout>
                 <div className="md:ml-64 pt-16 pb-16">
                     <section className="space-y-12 p-4 max-w-full">
                         <h1 className="text-4xl md:text-6xl font-cursive text-center"
                             style={{color: colors.secondary}}>
-                            Tati & Iuri
+                            Tati & Iuri {name}
                             <div className="text-lg md:text-xl mt-4 font-sans" style={{color: colors.text}}>
                                 15 de Dezembro de 2024
                             </div>
