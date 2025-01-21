@@ -1,56 +1,55 @@
-import {useState, useEffect} from "react";
 import {colors} from "../components/Sidebar.tsx";
 import {MainLayout} from "../components/MainLayout.tsx";
 import {Check, Gift, Heart, MapPin} from "lucide-react";
 import {NavLink} from "react-router-dom";
+//
+// const images = [
+//     "placeholder.png",
+//     "placeholder.png",
+//     "placeholder.png"
+// ];
 
-const images = [
-    "/placeholder.webp",
-    "/placeholder.webp",
-    "/placeholder.webp"
-];
-
-const ImageCarousel = () => {
-    const [currentImage, setCurrentImage] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 5000);
-        return () => clearInterval(timer);
-    }, []);
-
-    return (
-        <div className="aspect-video max-w-3xl mx-auto relative overflow-hidden rounded-2xl shadow-lg">
-            <div className="relative h-full w-full">
-                {images.map((src, index) => (
-                    <img
-                        key={index}
-                        src={src}
-                        alt={`Foto ${index + 1}`}
-                        className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
-                            currentImage === index ? "opacity-100" : "opacity-0"
-                        }`}
-                    />
-                ))}
-            </div>
-
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-                {images.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setCurrentImage(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                            currentImage === index
-                                ? "bg-white w-4"
-                                : "bg-white/50 hover:bg-white/75"
-                        }`}
-                    />
-                ))}
-            </div>
-        </div>
-    );
-};
+// const ImageCarousel = () => {
+//     const [currentImage, setCurrentImage] = useState(0);
+//
+//     useEffect(() => {
+//         const timer = setInterval(() => {
+//             setCurrentImage((prev) => (prev + 1) % images.length);
+//         }, 5000);
+//         return () => clearInterval(timer);
+//     }, []);
+//
+//     return (
+//         <div className="aspect-video max-w-3xl mx-auto relative overflow-hidden rounded-2xl shadow-lg">
+//             <div className="relative h-full w-full">
+//                 {images.map((src, index) => (
+//                     <img
+//                         key={index}
+//                         src={src}
+//                         alt={`Foto ${index + 1}`}
+//                         className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
+//                             currentImage === index ? "opacity-100" : "opacity-0"
+//                         }`}
+//                     />
+//                 ))}
+//             </div>
+//
+//             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+//                 {images.map((_, index) => (
+//                     <button
+//                         key={index}
+//                         onClick={() => setCurrentImage(index)}
+//                         className={`w-2 h-2 rounded-full transition-all duration-300 ${
+//                             currentImage === index
+//                                 ? "bg-white w-4"
+//                                 : "bg-white/50 hover:bg-white/75"
+//                         }`}
+//                     />
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// };
 
 export const HomePage = () => {
     const sections = [
@@ -82,7 +81,7 @@ export const HomePage = () => {
 
     return (
         <MainLayout>
-                <div className="mx-auto  ml-12 pt-16 pb-16">
+                <div className="md:ml-64 pt-16 pb-16">
                     <section className="space-y-12 p-4 max-w-full">
                         <h1 className="text-4xl md:text-6xl font-cursive text-center"
                             style={{color: colors.secondary}}>
@@ -91,8 +90,16 @@ export const HomePage = () => {
                                 15 de Dezembro de 2024
                             </div>
                         </h1>
-                        <div className="max-w-full overflow-hidden">
-                            <ImageCarousel/>
+                        <div className="max-w-full overflow-hidden ">
+                            <img
+                                src={"tatieiuri.jpg"}
+                                alt={"Foto"}
+
+                                // className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
+                                //     currentImage === index ? "opacity-100" : "opacity-0"
+                                // }`}
+                            />
+                            {/*<ImageCarousel/>*/}
                         </div>
                     </section>
 

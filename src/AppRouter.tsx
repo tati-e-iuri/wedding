@@ -35,7 +35,9 @@ const router = createBrowserRouter([
         errorElement: <BubbleError />,
     },
 
-]);
+],{
+    basename: "/casamento"
+});
 
 export const AppRouter = () => {
     return <RouterProvider router={router} />;

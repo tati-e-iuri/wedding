@@ -16,49 +16,49 @@ const gifts: Gift[] = [
         name: "Kit Cozinha Básico",
         description: "Conjunto essencial para começar",
         value: 50,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     },
     {
         id: 2,
         name: "Jogo de Toalhas",
         description: "Kit completo para o novo lar",
         value: 100,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     },
     {
         id: 3,
         name: "Jogo de Panelas",
         description: "Conjunto premium antiaderente",
         value: 200,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     },
     {
         id: 4,
         name: "Jogo de Jantar",
         description: "Conjunto para 6 pessoas",
         value: 350,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     },
     {
         id: 5,
         name: "Robô Aspirador",
         description: "Limpeza inteligente",
         value: 500,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     },
     {
         id: 6,
         name: "Kit Eletrodomésticos",
         description: "Conjunto completo para casa",
         value: 1000,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     },
     {
         id: 7,
         name: "Outro Valor",
         description: "Escolha um valor personalizado",
         value: 0,
-        image: "/placeholder.webp"
+        image: "placeholder.png"
     }
 ];
 
