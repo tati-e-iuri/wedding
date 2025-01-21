@@ -10,7 +10,7 @@ export const colors = {
 /** Sidebar Component */
 export const Sidebar = ({ isOpen, setIsOpen }: any) => {
     const menuItems = [
-        { icon: Home, text: "Home", to: "/" },
+        { icon: Home, text: "Home", to: "/home" },
         { icon: Heart, text: "Sobre os Noivos", to: "/sobre" },
         { icon: Gift, text: "Lista de Presentes", to: "/presentes" },
         { icon: MapPin, text: "Local da Festa", to: "/local" },

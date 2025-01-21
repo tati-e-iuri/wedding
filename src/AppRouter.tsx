@@ -18,6 +18,11 @@ const router = createBrowserRouter([
         errorElement: <BubbleError />,
     },
     {
+        path: "/home",
+        element: <HomePage />,
+        errorElement: <BubbleError />,
+    },
+    {
         path: "/sobre",
         element: <AboutPage />,
         errorElement: <BubbleError />,
