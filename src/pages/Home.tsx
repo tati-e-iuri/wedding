@@ -80,15 +80,13 @@ export const HomePage = () => {
         }
     ];
 
-    const name = env.NAME
-
     return (
         <MainLayout>
                 <div className="md:ml-64 pt-16 pb-16">
                     <section className="space-y-12 p-4 max-w-full">
                         <h1 className="text-4xl md:text-6xl font-cursive text-center"
                             style={{color: colors.secondary}}>
-                            Tati & Iuri {name}
+                            Tati & Iuri
                             <div className="text-lg md:text-xl mt-4 font-sans" style={{color: colors.text}}>
                                 15 de Dezembro de 2024
                             </div>
