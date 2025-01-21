@@ -37,7 +37,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: any) => {
                 <div className="p-8">
                     <h1 className="text-4xl font-bold mb-10 text-center font-cursive"
                         style={{ color: colors.secondary }}>
-                        Tati & Iuri
+                        Tatá & Iuri
                     </h1>
                     <ul className="space-y-6">
                         {menuItems.map((item, index) => (
