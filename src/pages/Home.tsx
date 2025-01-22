@@ -41,7 +41,7 @@ export const HomePage = () => {
                         <img
                             src={`flor-2.png`}
                             alt="Decoração"
-                            className="absolute top-2 right-0 w-44 h-auto z-10"
+                            className="absolute top-2 right-0 w-52 h-auto z-10"
                         />
 
                         {/* Imagem principal com corte no topo */}
