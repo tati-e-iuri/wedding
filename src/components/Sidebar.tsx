@@ -1,4 +1,4 @@
-import { Menu, X, Heart, Gift, MapPin, Check, Home } from 'lucide-react';
+import { Menu, Heart, Gift, MapPin, Check, Home } from 'lucide-react';
 import {NavLink} from "react-router-dom";
 export const colors = {
     primary: "#FFB6C1", // Rosa claro
@@ -26,7 +26,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: any) => {
 
             <button className="fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-md md:hidden"
                     onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? <X size={24} /> : <Menu size={24} />}
+                {!isOpen && <Menu size={24} className={"text-black z-[1000]"}/>}
             </button>
 
             <nav className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform 
