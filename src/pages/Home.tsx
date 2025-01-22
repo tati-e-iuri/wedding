@@ -41,23 +41,23 @@ export const HomePage = () => {
                         <img
                             src={`flor-2.png`}
                             alt="Decoração"
-                            className="absolute top-4 right-4 w-40 h-auto z-10"
+                            className="absolute top-2 right-0 w-56 h-auto z-10"
                         />
 
                         {/* Imagem principal com corte no topo */}
                         <img
                             src={`tatieiuri.jpg`}
                             alt={"Foto"}
-                            className="w-full h-[50vh] object-cover object-[center_35%] absolute top-0"
+                            className="w-full h-[60vh] object-cover object-[center_10%] absolute -top-20"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"/>
 
                         {/* Texto centralizado na parte inferior */}
                         <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center">
-                            <h1 className="text-5xl font-cursive text-white mb-2">
+                            <h1 className="text-5xl font-cursive text-[#FCFB1B] mb-2">
                                 Tatá & Iuri
                             </h1>
-                            <div className="text-lg font-sans text-white">
+                            <div className="text-lg font-sans text-[#FCFB1B]">
                                 15 de Dezembro de 2024
                             </div>
                         </div>
@@ -65,29 +65,29 @@ export const HomePage = () => {
                 </div>
 
                 {/* Versão desktop */}
-                <div className="hidden md:block mx-auto px-4 py-16 md:ml-64">
+                <div className="hidden md:block mx-auto px-4 pt-16 pb-4 md:ml-64">
                     <section className="space-y-12 max-w-4xl mx-auto">
-                        <h1 className="text-6xl font-cursive text-center"
-                            style={{color: colors.secondary}}>
+                        <h1 className="text-6xl font-cursive text-center" style={{color: colors.secondary}}>
                             Tatá & Iuri
                             <div className="text-xl mt-4 font-sans" style={{color: colors.text}}>
                                 15 de Dezembro de 2024
                             </div>
                         </h1>
-                        <div className="max-w-4xl mx-auto relative">
+                        <div className="max-w-4xl mx-auto relative h-[400px]"> {/* Define uma altura fixa */}
                             <img
                                 src={`flor-2.png`}
                                 alt="Decoração"
-                                className="absolute top-12 right-8 md:w-48 lg:w-64 h-auto z-10"
+                                className="absolute top-4 right-4 md:w-64 lg:w-80 h-auto z-10"
                             />
                             <img
                                 src={`tatieiuri.jpg`}
                                 alt={"Foto"}
-                                className="w-full object-cover rounded-lg shadow-lg"
+                                className="w-full h-full object-cover object-center rounded-lg shadow-lg"
                             />
                         </div>
                     </section>
                 </div>
+
 
                 {/* Seção de cards */}
                 <section className="max-w-6xl mx-auto mt-8 md:mt-16 px-4 md:pl-64">
