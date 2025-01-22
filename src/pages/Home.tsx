@@ -41,14 +41,14 @@ export const HomePage = () => {
                         <img
                             src={`flor-2.png`}
                             alt="Decoração"
-                            className="absolute top-2 right-0 w-56 h-auto z-10"
+                            className="absolute top-2 right-0 w-44 h-auto z-10"
                         />
 
                         {/* Imagem principal com corte no topo */}
                         <img
                             src={`tatieiuri.jpg`}
                             alt={"Foto"}
-                            className="w-full h-[60vh] object-cover object-[center_10%] absolute -top-20"
+                            className="w-full h-[80vh] object-cover object-[center_10%] absolute -top-24"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"/>
 
@@ -57,16 +57,17 @@ export const HomePage = () => {
                             <h1 className="text-5xl font-cursive text-[#FCFB1B] mb-2">
                                 Tatá & Iuri
                             </h1>
-                            <div className="text-lg font-sans text-[#FCFB1B]">
-                                15 de Dezembro de 2024
-                            </div>
+
                         </div>
+                    </div>
+                    <div className="text-lg font-sans text-black text-center">
+                        15 de Dezembro de 2024
                     </div>
                 </div>
 
                 {/* Versão desktop */}
                 <div className="hidden md:block mx-auto px-4 pt-16 pb-4 md:ml-64">
-                    <section className="space-y-12 max-w-4xl mx-auto">
+                <section className="space-y-12 max-w-4xl mx-auto">
                         <h1 className="text-6xl font-cursive text-center" style={{color: colors.secondary}}>
                             Tatá & Iuri
                             <div className="text-xl mt-4 font-sans" style={{color: colors.text}}>
