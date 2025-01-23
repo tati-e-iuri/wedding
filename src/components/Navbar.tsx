@@ -28,8 +28,9 @@ export const Navbar = ({ isOpen, setIsOpen } : any) => {
             )}
 
             {/* Mobile navbar */}
-            <div className="fixed top-0 left-0 right-0 h-16 bg-[#C6CFBE] shadow-md flex items-center justify-between px-4 z-50 md:hidden">
-                <span className="text-2xl font-sans font-bold" style={{ color: colors.primary }}>
+            <div
+                className="fixed top-0 left-0 right-0 h-16 bg-[#C6CFBE] shadow-md flex items-center justify-between px-4 z-40 md:hidden overflow-hidden">
+                <span className="text-2xl font-sans font-bold" style={{color: colors.primary}}>
                     T & I
                 </span>
                 <button
@@ -41,7 +42,8 @@ export const Navbar = ({ isOpen, setIsOpen } : any) => {
             </div>
 
             {/* Desktop navbar */}
-            <div className="hidden md:flex fixed top-0 left-0 right-0 h-20 bg-transparent items-center justify-between px-8 z-50">
+            <div
+                className="hidden md:flex fixed top-0 left-0 right-0 h-20 bg-transparent items-center justify-between px-8 z-50">
                 <div className="max-w-6xl w-full mx-auto flex justify-between items-center">
                     <span className="text-2xl font-sans font-bold text-[#394831]">
                         T & I
@@ -66,7 +68,7 @@ export const Navbar = ({ isOpen, setIsOpen } : any) => {
                            transition-transform duration-300 ease-in-out z-50
                            ${isOpen ? "translate-x-0" : "-translate-x-full"} 
                            md:hidden`}
-                style={{ backgroundColor: colors.background }}
+                style={{backgroundColor: colors.background}}
             >
                 <div className="p-8">
                     <ul className="space-y-6">
@@ -76,12 +78,12 @@ export const Navbar = ({ isOpen, setIsOpen } : any) => {
                                     to={item.to}
                                     className="flex items-center p-3 rounded-lg hover:bg-white
                                              transition-colors duration-200"
-                                    style={{ color: colors.text }}
+                                    style={{color: colors.text}}
                                 >
                                     <item.icon
                                         size={20}
                                         className="mr-4"
-                                        style={{ color: colors.primary }}
+                                        style={{color: colors.primary}}
                                     />
                                     {item.text}
                                 </NavLink>
