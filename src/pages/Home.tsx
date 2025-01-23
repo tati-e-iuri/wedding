@@ -49,7 +49,7 @@ export const HomePage = () => {
                     <img
                         src="flor-2.png"
                         alt="Decorative Flower"
-                        className="absolute right-0 bottom-[30vh] w-56 h-auto"
+                        className="absolute -right-12 bottom-[25vh] w-56 h-auto rotate-45"
                     />
                 </div>
 
@@ -88,7 +88,7 @@ export const HomePage = () => {
                         <img
                             src="flor-2.png"
                             alt="Decorative Flower"
-                            className="absolute right-0 bottom-0 w-96 h-auto"
+                            className="absolute right-0 bottom-0 w-96 h-auto "
                         />
                     </div>
                 </div>
