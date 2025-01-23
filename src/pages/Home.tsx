@@ -3,11 +3,10 @@ import { NavLink } from "react-router-dom";
 
 export const HomePage = () => {
     const calculateDaysRemaining = () => {
-        // const weddingDate = new Date('2025-07-19');
-        // const today = new Date();
-        // @ts-ignore
-        // const diffTime = Math.abs(weddingDate - today);
-        const diffTime = 15000000000;
+        const weddingDate = new Date('2025-07-19');
+        const today = new Date();
+        //@ts-ignore
+        const diffTime = Math.abs(weddingDate - today);
         return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     };
 
