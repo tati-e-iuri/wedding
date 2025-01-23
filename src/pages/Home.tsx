@@ -12,7 +12,7 @@ export const HomePage = () => {
 
     return (
         <MainLayout>
-            <div className="w-full min-h-screen bg-[#C6CFBE]">
+            <div className="w-full min-h-screen bg-[#C6CFBE] relative overflow-hidden">
                 {/* Mobile Version */}
                 <div className="md:hidden flex flex-col">
                     {/* Mobile content remains the same */}
@@ -26,11 +26,12 @@ export const HomePage = () => {
                                 alt="Wedding"
                                 className="w-full h-full object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-[#C6CFBE]/80 via-transparent to-transparent" />
+                            <div
+                                className="absolute inset-0 bg-gradient-to-b from-[#C6CFBE]/80 via-transparent to-transparent"/>
                         </div>
                     </div>
 
-                    <div className="px-6 -mt-4 bg-[#C6CFBE]">
+                    <div className="px-6 -mt-4 bg-[#C6CFBE] relative z-10">
                         <div className="text-xl text-[#394831] mt-4">
                             19.07.2025 — Faltam {calculateDaysRemaining()} dias
                         </div>
@@ -49,7 +50,7 @@ export const HomePage = () => {
                     <img
                         src="flor-2.png"
                         alt="Decorative Flower"
-                        className="absolute right-0 bottom-[30vh] w-56 h-auto rotate-45 translate-x-6"
+                        className="absolute right-0 bottom-[30vh] w-auto h-32 rotate-45 translate-x-6 pointer-events-none z-10"
                     />
                 </div>
 
@@ -64,7 +65,8 @@ export const HomePage = () => {
                         />
 
                         {/* Overlay gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-b from-[#C6CFBE]/80 via-transparent to-black/30" />
+                        <div
+                            className="absolute inset-0 bg-gradient-to-b from-[#C6CFBE]/80 via-transparent to-black/30"/>
 
                         {/* Content Container */}
                         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
