@@ -1,4 +1,4 @@
-import {colors} from "../components/Sidebar.tsx";
+import {colors} from "../components/Navbar.tsx";
 import {useState} from "react";
 import {MainLayout} from "../components/MainLayout.tsx";
 

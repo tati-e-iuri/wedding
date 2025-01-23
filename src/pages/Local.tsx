@@ -1,5 +1,5 @@
 import {MapPin} from "lucide-react";
-import {colors} from "../components/Sidebar.tsx";
+import {colors} from "../components/Navbar.tsx";
 import {MainLayout} from "../components/MainLayout.tsx";
 
 export const LocationPage = () => {
