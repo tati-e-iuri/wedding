@@ -33,7 +33,7 @@ export const Navbar = ({ isOpen, setIsOpen } : any) => {
                     T & I
                 </span>
                 <button
-                    className="p-2 rounded-lg"
+                    className="p-2 rounded-lg absolute right-4 top-1/2 transform -translate-y-1/2 z-50"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <Menu size={24} className="text-black"/>
